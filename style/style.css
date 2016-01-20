@@ -538,9 +538,47 @@ a {
    position: relative;
    text-align: center;
    text-decoration: none;
-   text-shadow: -1px -1px 1px white, 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+   text-shadow: 0px 0px 5px white;
    text-transform: uppercase;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
    vertical-align: baseline;
+}
+
+#prueba{
+}
+
+.site-title img{
+   position:absolute;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
+   margin-left: -21%;
+   margin-bottom: -80%;
+   height: 200px;
+}
+ 
+.site-title img.novisible{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.site-title:hover img.novisible{
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.site-title:hover .visible {
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.site-title .visible:hover {
+	opacity:0;
+	filter:alpha(opacity=0);
 }
 
 .social_bookmarks_container {
